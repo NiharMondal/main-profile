@@ -1,0 +1,33 @@
+.socialSite {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+}
+.section a {
+  font-size: 25px;
+}
+.section .facebook {
+  color: #1877f2;
+}
+.section .github {
+  color: #fff;
+}
+.section .linkedIn {
+  color: #0a66c2;
+}
+.section::after {
+  content: "";
+  background-color: red;
+  height: 40px;
+  width: 2px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .socialSite {
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+button{
+   padding: 1rem 2rem;
+   margin-top: 1rem;
+   border-radius: .5rem;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   font-size: larger;
+   color: white;
+   background-color: var(--secondaryColor);
+   box-shadow: 0 0 0 0 10px  rgba(0, 0, 0, 0.5);
+}
+
+.expertise{
+   display: flex;
+   flex-direction: column;
+}
+
+.skill_design{
+   float:left;
+   background:var(--secondaryColor);
+   color:white;
+   margin-right:5px;
+   border-radius: 6px;
+   padding:4px 10px;
+
+}

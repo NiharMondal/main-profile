@@ -1,0 +1,17 @@
+.navbar {
+  width: 400px;
+  position: fixed;
+  margin: 0 auto;
+  bottom: 41px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  text-align: center;
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  padding: 16px 20px;
+  z-index: 1;
+}
+.nav_wraper {
+}
