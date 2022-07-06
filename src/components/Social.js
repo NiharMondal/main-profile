@@ -9,7 +9,7 @@ const Social = () => {
     <div className={styles.socialSite}>
       <div className={styles.section}>
         <a
-          href="https://web.facebook.com/nihar.mondol.58/"
+          href="https://web.facebook.com/niharmondal.01/"
           target="blank"
           className={styles.facebook}
         >

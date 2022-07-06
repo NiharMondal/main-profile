@@ -2,16 +2,34 @@
   width: 400px;
   position: fixed;
   margin: 0 auto;
-  bottom: 41px;
+  bottom: 2.5rem;
   left: 50%;
   transform: translate(-50%, 50%);
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 0.8rem;
   text-align: center;
   -webkit-backdrop-filter: blur(7px);
   backdrop-filter: blur(7px);
-  padding: 16px 20px;
+
   z-index: 1;
 }
+
 .nav_wraper {
+  padding: 0.7rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+.nav_wraper a {
+  background: transparent;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  padding: 0.8rem;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav_wraper a:hover {
+  background-color: var(--secondaryColor);
+}
+.nav_wraper a.active {
+  background-color: var(--secondaryColor);
 }

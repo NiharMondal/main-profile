@@ -1,37 +1,28 @@
 import React from "react";
 import { Fade } from "react-reveal";
 import styles from "../styles/About.module.css";
+import resume from "../assets/Resume of Nihar Mondal.pdf";
 const mySkills = [
   "Javascript",
-  "React.js",
+  "React",
+  "TypeScript",
+  "Next js",
   "Bootstrap",
+  "Tailwind",
   "React-bootstrap",
   "Material UI",
   "Firebase",
-  "Node.js",
-  "Express.js",
-  "MongoDB Atlas",
+  "NodeJs",
+  "ExpressJs",
   "Mongoose",
-  "Redux.js",
+  "MongoDB Atlas",
+  "PostgresQl",
+  "Redux Toolkit",
   "Sass",
   "HTML5",
   "CSS3",
 ];
 
-const expertise = [
-  "Javascript",
-  "React.js",
-  "Node.js",
-  "Express.js",
-  "MongoDB Atlas",
-  "Mongoose",
-  "Firebase",
-  "HTML5",
-  "CSS3",
-  "Bootstrap",
-  "React-Bootstrap",
-  "Material UI",
-];
 const About = () => {
   return (
     <div id="about">
@@ -51,36 +42,26 @@ const About = () => {
               responsive, professional websites, using React.js. Right now I'm
               learning popular framework - NextJs and Typescript.
             </p>
-            <button> Download Resume</button>
+            <button>
+              <a href={resume} download>
+                {" "}
+                Download Resume
+              </a>
+            </button>
           </div>
           <div className="column">
             <div className={styles.expertise}>
               <h2>My Skills</h2>
               <div>
-                {mySkills.map((skill, index) => {
-                  return (
-                    <Fade right>
-                      <p key={"skill" + index} className={styles.skill_design}>
+                <Fade right>
+                  {mySkills.map((skill, index) => {
+                    return (
+                      <p key={index} className={styles.skill_design}>
                         {skill}
                       </p>
-                    </Fade>
-                  );
-                })}
-              </div>
-            </div>
-            <br />
-            <div className={styles.expertise}>
-              <h2>Feel free to work with</h2>
-              <div>
-                {expertise.map((skill, index) => {
-                  return (
-                    <Fade right>
-                      <p key={"skill" + index} className={styles.skill_design}>
-                        {skill}
-                      </p>
-                    </Fade>
-                  );
-                })}
+                    );
+                  })}
+                </Fade>
               </div>
             </div>
           </div>

@@ -3,13 +3,12 @@ import { Main, About, Projects, Contact } from "./components";
 
 const App = () => {
   return (
-    <section className="reset">
+    <div className="reset">
       <Main />
       <About />
       <Projects />
       <Contact />
-      
-    </section>
+    </div>
   );
 };
 

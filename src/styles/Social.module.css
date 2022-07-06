@@ -21,7 +21,7 @@
 }
 .section::after {
   content: "";
-  background-color: red;
+  background-color: var(--labelColor);
   height: 40px;
   width: 2px;
   margin: 0 auto;

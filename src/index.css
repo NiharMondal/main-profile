@@ -7,13 +7,14 @@
   --h2FontSize: 35px;
   --h2FontWeight: 600 !important;
   --h2Spacing: 2px;
-  --labelColor: #1beb37;
+  --labelColor: hsl(232, 43%, 61%);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -27,11 +28,14 @@ body {
 a {
   list-style: none;
   text-decoration: none;
+  color: var(--fontColor);
 }
 .container {
-  padding: 5rem 8rem;
+  padding: 5rem 7rem;
 }
-
+.project_container{
+  padding: 5rem 1rem;
+}
 .section_header {
   text-align: center;
 }
@@ -53,6 +57,7 @@ a {
   width: 50%;
   padding-top: 2rem;
 }
+
 .column h3 {
   font-size: 30px;
 }
@@ -60,9 +65,35 @@ a {
   margin-top: 1rem;
 }
 
+label{
+  padding: .3rem 0;
+}
+.message_input, textarea{
+  cursor: text;
+  padding: .5rem ;
+  outline: none;
+  border: none;
+  border-radius: .3rem;
+  font-size:18px;
+}
+
+
+@media (max-width: 700px) {
+  .project_container ,.container {
+    padding: 2rem 0.3rem !important;
+  }
+  .row {
+    display: block;
+  }
+  .column {
+    width: 100%;
+    padding-top: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
   }
   .row {
     display: block;
@@ -74,7 +105,7 @@ a {
 }
 @media (max-width: 1024px) {
   .container {
-    padding: 2rem 1rem;
+    padding: 2rem 2.5rem;
   }
   .column {
     width: 100%;

@@ -1,0 +1,30 @@
+.typical_text {
+  font-style: italic;
+}
+.form_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form_wrapper form {
+  margin-top: 1rem;
+  padding: 2rem 2rem;
+  width: 600px;
+  background-color: var(--secondaryColor);
+  border-radius: .7rem;
+}
+.form_control {
+  display: flex;
+  flex-direction: column;
+  margin: .5rem 0;
+}
+input {
+
+  background-color: var(--bgColor);
+  color: var(--fontColor);
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: .3rem;
+  font-size: 1.3rem;
+}
