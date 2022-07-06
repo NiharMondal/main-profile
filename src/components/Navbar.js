@@ -3,13 +3,13 @@ import styles from "../styles/Navbar.module.css";
 import { AiOutlineHome, AiOutlineUser, AiOutlineProfile } from "react-icons/ai";
 import { BiMessageSquareDetail } from "react-icons/bi";
 const Navbar = () => {
-  const [activeNav, setActiveNav] = useState("#");
+  const [activeNav, setActiveNav] = useState("#main");
   return (
     <div className={styles.navbar}>
       <nav className={styles.nav_wraper}>
         <a
-          href="#"
-          className={activeNav === "#" ? styles.active : ""}
+          href="#main"
+          className={activeNav === "#main" ? styles.active : ""}
           onClick={() => setActiveNav("#")}
         >
           {" "}
