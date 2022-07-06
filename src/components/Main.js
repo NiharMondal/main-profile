@@ -17,7 +17,7 @@ const Main = () => {
     5000,
   ];
   return (
-    <main id="#main">
+    <main id="main">
       <div className={styles.main_section}>
         <Zoom>
           <img src={avator} alt="" className={styles.img} />
