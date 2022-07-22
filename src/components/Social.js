@@ -22,7 +22,11 @@ const Social = () => {
         >
           <AiFillGithub />
         </a>
-        <a target="blank" href="https://google.com" className={styles.linkedIn}>
+        <a
+          target="blank"
+          href="https://www.linkedin.com/in/developer-nihar/"
+          className={styles.linkedIn}
+        >
           <FaLinkedin />
         </a>
       </div>
